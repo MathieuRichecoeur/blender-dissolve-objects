@@ -22,12 +22,11 @@ Download the latest `.zip` from the [Releases](../../releases) page, then instal
   Go to **Edit → Preferences → Add-ons → Install...** and select the `.zip` file.
 
 ## How to use
-
-Select objects you want to delete and access the operator from:
+Select objects you want to delete and launch the tool from:
 
 - **View3D → Object → Dissolve**
-- **Object Context Menu**
-- **Outliner Context Menu**
+- **Object Context Menu → Dissolve**
+- **Outliner Context Menu → Dissolve**
 
 Tool options :
 *   **Global Delete** : Completely delete objects from the file instead of only removing them from the hierarchy.
