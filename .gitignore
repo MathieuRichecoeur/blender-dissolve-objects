@@ -1,0 +1,3 @@
+# python temp paths
+__pycache__/
+*.py[cod]
