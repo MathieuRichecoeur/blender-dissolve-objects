@@ -4,7 +4,7 @@ Delete selected objects while preserving their children's transforms and hierarc
 
 Useful for editing nested object hierarchies, similar to **Dissolve Bones** for armatures.
 
-<video controls src="assets/videos/dissolve_objects_demo.mp4" title="Dissolve Objects Demo"></video>
+![Demo](assets/gifs/dissolve_objects_demo.gif)
 
 Optionally skip objects with sheared transforms to help preserve their visual appearance.
 
