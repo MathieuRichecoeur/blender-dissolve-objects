@@ -10,7 +10,7 @@ Based on an idea and request by 3D artist Enzo Ducos.
 
 ## Compatibility
 
-Blender **3.6 and newer**, including the latest Blender 5.2 LTS release. 
+Blender **3.6 and newer**, including the latest Blender **5.2 LTS** release. 
 
 ## Installation
 
