@@ -10,8 +10,8 @@ bl_info = {
     "category": "Object",
 }
 
-"""Delete selected objects while preserving their children's transforms and
-hierarchy by reparenting children to their closest parent.
+"""Delete selected objects while preserving their children's transforms and 
+hierarchy by reparenting them to the closest remaining parent.
 Useful when editing nested object hierarchies.
 Similar to Dissolve Bones for armatures.
 Optionally skip parents with sheared transforms or parents with children 
@@ -85,8 +85,8 @@ class DO_OT_DissolveObject(bpy.types.Operator):
     bl_idname = "object.dissolve_selected_objects"
     bl_label = "Dissolve"
     bl_description = (
-        "Delete selected objects while preserving their children's transforms and\n"
-        "hierarchy by reparenting children to their closest parent."
+        "Delete selected objects while preserving their children's transforms and \n"
+        "hierarchy by reparenting them to the closest remaining parent."
     )
     bl_options = {"REGISTER", "UNDO"}
 

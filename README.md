@@ -1,6 +1,6 @@
 # Blender Add-On: Dissolve Objects
 
-Delete selected objects while preserving their children's transforms and hierarchy by reparenting children to their closest parent.
+Delete selected objects while preserving their children's transforms and hierarchy by reparenting them to the closest remaining parent.
 
 Useful for editing nested object hierarchies, similar to **Dissolve Bones** for armatures.
 
