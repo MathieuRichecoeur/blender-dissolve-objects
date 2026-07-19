@@ -1,6 +1,6 @@
 bl_info = {
     "name": "Dissolve Objects",
-    "description": "Delete selected objects while keeping the transforms of their children.",
+    "description": "Dissolve selected objects while preserving their children's transforms.",
     "author": "Mathieu Richecoeur",
     "version": (1, 0, 0),
     "blender": (3, 6, 0),
@@ -10,7 +10,8 @@ bl_info = {
     "category": "Object",
 }
 
-"""Delete selected objects while keeping the transforms of their children.
+"""Delete selected objects while preserving their children's transforms and
+hierarchy by reparenting children to their closest parent.
 Useful when editing nested object hierarchies.
 Similar to Dissolve Bones for armatures.
 Optionally skip parents with sheared transforms or parents with children 
@@ -83,7 +84,10 @@ def filter_sheared(objects: list[bpy.types.Object]) -> list[bpy.types.Object]:
 class DO_OT_DissolveObject(bpy.types.Operator):
     bl_idname = "object.dissolve_selected_objects"
     bl_label = "Dissolve"
-    bl_description = "Delete objects and keep their children transforms"
+    bl_description = (
+        "Delete selected objects while preserving their children's transforms and\n"
+        "hierarchy by reparenting children to their closest parent."
+    )
     bl_options = {"REGISTER", "UNDO"}
 
     use_global: bpy.props.BoolProperty(

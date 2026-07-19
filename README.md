@@ -1,8 +1,10 @@
 # Blender Add-On: Dissolve Objects
 
-Delete selected objects while preserving the transforms of their children.
+Delete selected objects while preserving their children's transforms and hierarchy by reparenting children to their closest parent.
 
 Useful for editing nested object hierarchies, similar to **Dissolve Bones** for armatures.
+
+<video controls src="assets/videos/dissolve_objects_demo.mp4" title="Dissolve Objects Demo"></video>
 
 Optionally skip objects with sheared transforms to help preserve their visual appearance.
 
@@ -26,9 +28,20 @@ Download the latest `.zip` from the [Releases](../../releases) page, then instal
 Select objects you want to delete and launch the tool from:
 
 - **View3D → Object → Dissolve**
+  
+![View3D Menu](assets/images/object_menu.png)
+
 - **Object Context Menu → Dissolve**
+  
+![View3D Context Menu](assets/images/object_context_menu.png)
+
+
 - **Outliner Context Menu → Dissolve**
 
+![Outliner Menu](assets/images/outliner_menu.png)
+
+
 ### Tool Options
+
 * **Global Delete**: Completely delete objects from the file instead of only removing them from the hierarchy.
 * **Skip Sheared**: Do not delete parents with sheared transforms, or parents whose children have sheared transforms. Deleting such objects may change the visual appearance of their children.
