@@ -19,7 +19,7 @@ Blender **3.6 and newer**, including the latest Blender **5.2 LTS** release.
 Download the latest `.zip` from the [Releases](../../releases) page, then install it through:
 
 - **Blender 4.2 and newer:**
-  Simply **drag and drop** the downloaded `.zip` file directly into the Blender window to install it. Alternatively, go to **Edit → Preferences → Get Extensions**, click the dropdown arrow in the top-right corner, and select **Install from Disk...**
+  Simply **drag and drop** the downloaded `.zip` file directly into the Blender window to install it.
 - **Blender 3.6 to 4.1:**
   Go to **Edit → Preferences → Add-ons → Install...** and select the `.zip` file.
 
